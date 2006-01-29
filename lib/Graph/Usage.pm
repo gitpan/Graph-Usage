@@ -1,18 +1,18 @@
 #############################################################################
 # Generate a graph from package dependencies (usage profile via use/require)
 #
-# (c) by Tels 2004-2005.
+# (c) by Tels 2004-2006.
 #############################################################################
 
 package Graph::Usage;
 
-use Graph::Easy 0.36;
+use Graph::Easy 0.40;
 
 use strict;
 # XXX TODO: remove the global var @files
 use vars qw/$VERSION @ISA @EXPORT_OK @files/;
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 @ISA = qw/Exporter/;
 @EXPORT_OK = qw/LINK_USE LINK_REQUIRE/;
 
@@ -680,7 +680,7 @@ X<gpl>
 
 =head1 AUTHOR
 
-(c) 2005 by Tels bloodgate.com.
+(c) 2005-2006 by Tels bloodgate.com.
 
 X<author>
 X<tels>

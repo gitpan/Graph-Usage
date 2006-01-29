@@ -11,7 +11,8 @@ sub MY::metafile {
     return $self->SUPER::metafile_target(@_);
   };
 
-  my $node = new YAML::Node {};
+  require YAML::Node;
+  my $node = YAML::Node->new({});
 
   $node->{name}			= $self->{DISTNAME};
   $node->{abstract}		= $self->{ABSTRACT};
@@ -45,7 +46,7 @@ WriteMakefile(
     NAME                => 'Graph::Usage',
     VERSION_FROM        => 'lib/Graph/Usage.pm', # finds $VERSION
     PREREQ_PM           => {
-	'Graph::Easy' => 0.36,
+	'Graph::Easy' => 0.40,
         "Scalar::Util" => 1.13,
         "Heap" => 0.71,
         },

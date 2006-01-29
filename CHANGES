@@ -1,5 +1,9 @@
 Revision history for gen_graph - generate graphs from Perl package use statements
 
+2006-01-29 v0.11 Tels  21 tests
+  * require Graph::Easy 0.40
+  * fix Makefile.PL to work with newer YAML
+
 2005-12-18 v0.11 Tels  21 tests
   * first release as Graph::Usage
   * require Graph::Easy 0.36
